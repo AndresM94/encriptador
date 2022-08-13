@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --color-primary: #0a3871;
+    --color-secondary: #495057;
+    --background-color-hover-second: #d8dfe8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+    /* logo */
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    gap: 40px;
+    position: absolute;
+    width: 7.5rem;
+    height: 3rem;
+    left: 35px;
+    top: 30px;
+}
+
+    /* Texto a encriptar */
+
+.texto {
+    color: var(--color-primary);
+    position: absolute;
+    width: 50%;
+    height: 38rem;
+    left: 240px;
+    top: 100px;
+}
+
+.texto .input-texto {
+    width: 90%;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    height: 90%;
+    resize: none;
+    border: none;
+    color: var(--color-primary);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.input-texto:hover {
+    border: 1px solid var(--color-primary);
+}
+
+.texto .input-texto::placeholder {
+    color: var(--color-primary);
+}
+
+    /* mensaje informativo */
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    width: 14.3125rem;
+    height: 1.125rem;
+    left: 240px;
+    top: 680px;
+}
+
+.info img {
+    width: 1rem;
+    height: 1rem;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.info p {
+    width: 12.8125rem;
+    height: 1.125rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    font-style: normal;
+    line-height: 150%;
+    color: var(--color-secondary);
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+    /* Card de salida de texto */
+
+.aside-text {
+    background-color: white;
+    box-shadow: 0px 0px 28px 8px #636363;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 25rem;
+    height: 46rem;
+    left: 1000px;
+    top: 40px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.5);
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+}
+
+#muñeco {
+    /* position: absolute; */
+    width: 21rem;
+    height: 19rem;
+    left: 32px;
+    top: 120px;
+}
+
+.aside-text .aviso {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 16px;
+    /* position: absolute; */
+    width: 21rem;
+    height: 7.625rem;
+    left: 32px;
+    top: 500px;
+}
+
+.aside-text .aviso .title {
+    color: #343A40;
+    width: 21rem;
+    height: 3.625rem;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    font-size: 1.5rem;
+    text-align: center;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.aside-text .aviso p {
+    color: var(--color-secondary);
+    width: 21rem;
+    height: 3rem;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    text-align: center;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+#salida-text {
+    border: none;
+    border-radius: 10px;
+    color: var(--color-secondary);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    height: 75%;
+    left: 36px;
+    line-height: 150%;
+    resize: none;
+    top: 32px;
+    width: 21rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#salida-text:hover {
+    border: 1px solid var(--color-primary);
+}
+
+.texto-salida {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ocultar {
+    display: none;
+}
+
+    /* botones */
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 24px;
+    position: absolute;
+    top: 700px;
+    left: 240px;
+}
+
+.btn-principal {
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    height: 3rem;
+    width: 19rem;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+}
+
+.btn-principal:hover {
+    opacity: 0.8;
+}
+
+.btn-segundario {
+    background-color: white;
+    border: 1px solid var(--color-primary);
+    border-radius: 24px;
+    color: var(--color-primary);
+    cursor: pointer;
+    height: 3rem;
+    width: 19rem;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+}
+
+.btn-segundario:hover {
+    background-color: var(--background-color-hover-second);
+}
+
+    /* media quierries */
+
+    /* Tablet */
+@media (max-width: 768px) {
+
+    /* Logo */
+    .logo {
+        left: 40px;
+        height: 3.125rem;
+        top: 20px;
+        width: 1.5rem;
+    }
+
+    /* Texto a encriptar */
+    .texto {
+        left: 40px;
+        height: 30rem;
+        width: 80%;
+    }
+
+    .texto .input-texto {
+        width: 100%;
+    }
+
+    /* Card de texto de salida */
+    .aside-text {
+        left: 40px;
+        height: 9rem;
+        top: 640px;
+        width: 40rem;
+    }
+
+    #muñeco {
+        display: none;
+    }
+
+    .aside-text .aviso {
+        width: 39rem;
+        height: 4.3125rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .aside-text .aviso .title {
+        height: 1.8125rem;
+        width: 100%;
+    }
+
+    .aside-text .aviso p {
+        height: 1.5rem;
+        width: 100%;
+    }
+
+    #salida-text {
+        height: 5rem;
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .texto-salida .btn-segundario {
+        width: 90%;
+    }
+
+    /* Mensaje informativo */
+    .info {
+        left: 40px;
+        top: 540px;
+    }
+
+    /* Botones */
+    .botones {
+        left: 40px;
+        top: 560px;
+    }
+}
+
+/* Movil */
+@media (max-width: 380px) {
+
+    /* logo */
+    .logo {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    /* Texto a encriptar */
+    .texto {
+        left: 24px;
+    }
+
+    /* Mensaje informativo */  
+    .info {
+        left: 24px;
+    }
+
+    /* Botones */
+    .botones {
+        left: 24px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Card texto salida */
+    .aside-text {
+        left: 24px;
+        top: 700px;
+        width: 20rem;
+    }
+
+    .aside-text .aviso {
+        width: 100%;
+    }
+
+    .aside-text .aviso .title {
+        font-size: 1.5rem;
+    }
+
+    .aside-text .aviso p {
+        font-size: 1rem;
+    }
+}
